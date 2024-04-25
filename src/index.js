@@ -5,13 +5,14 @@ import App from './App';
  import {ConfigureStore} from '@reduxjs/toolkit'
  const store= ConfigureStore({
   reducer:{
+    //user : 
     
   }
  })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provider store={}>
+    <Provider store={store}>
     <App />
     </Provider>
   </React.StrictMode>
