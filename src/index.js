@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { Provider} from 'react-redux'
 import App from './App';
  import {ConfigureStore} from '@reduxjs/toolkit';
- import UserReducer from './UserReducer';
+ import userReducer from './userReducer';
  const store= ConfigureStore({
   reducer:{
-    //user : 
+    users : userReducer
     
   }
  })
