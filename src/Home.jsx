@@ -8,7 +8,7 @@ function Home() {
 
 <h2>Crud App with JSON Server</h2>
 
-<button className='btn btn-success my-3 '>Create +</button>
+<Link className='btn btn-success my-3 '>Create +</Link>
 
 <table className='table'>
 <thead>
