@@ -25,6 +25,10 @@ function Home() {
 <td> {user.id}</td>
 <td> {user.name}</td>
 <td> {user.email}</td>
+<td>
+  <button className='btn btn-sm btn-primary'> Edit</button>
+  <button className='btn btn-sm btn-primary danger ms-2'> Delete</button>
+</td>
     </tr>
   ))}
 </tbody>

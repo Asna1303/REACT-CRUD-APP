@@ -1,22 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { Provider} from 'react-redux'
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import App from './App';
- import {ConfigureStore} from '@reduxjs/toolkit';
- import userReducer from './userReducer';
- const store= ConfigureStore({
-  reducer:{
-    users : userReducer
-    
-  }
- })
+import { configureStore } from '@reduxjs/toolkit'; // Corrected import
+import userReducer from './UserReducer'; // Corrected import and capitalization
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const store = configureStore({
+  reducer: {
+    users: userReducer
+  }
+});
+
+ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-    <App />
+      <App />
     </Provider>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 
