@@ -10,7 +10,7 @@ function Home() {
 
 <h2>Crud App with JSON Server</h2>
 
-<Link className='btn btn-success my-3 '>Create +</Link>
+<Link to ="/create" className='btn btn-success my-3 '>Create +</Link>
 
 <table className='table'>
 <thead>
