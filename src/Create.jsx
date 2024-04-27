@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { addUser } from './UserReducer';
-import { useDispatch } from 'react-redux';
+import { useDispatch,useSelector } from 'react-redux';
 
 
 function Create() {
     const [name,setName] = useState('')
     const [email,setEmail] = useState('')
     const dispatch=useDispatch();
+    const users = useSelector((state)=> state.users);
     const handleSubmit= (event) =>{
         event.preventDefault();
-        dispatch(addUser({
-          
+        dispatch(addUser({ id: , name,email
+
         }))
     }
 
