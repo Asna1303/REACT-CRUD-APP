@@ -6,8 +6,12 @@ import { useDispatch } from 'react-redux';
 function Create() {
     const [name,setName] = useState('')
     const [email,setEmail] = useState('')
+    const dispatch=useDispatch();
     const handleSubmit= (event) =>{
         event.preventDefault();
+        dispatch(addUser({
+          
+        }))
     }
 
   return (
