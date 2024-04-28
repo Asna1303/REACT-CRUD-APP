@@ -6,7 +6,10 @@ const Update = () => {
     const{id} =useParams();
     const users = useSelector((state)=> state.users);
     const existingUser=users.filter(f=>f.id===id);
-    
+    const {name,email}=existingUser[0];
+    const [uname,setName] = useState(name);
+    const [uemail,setEmail] = useState(email);
+
   return (
     <div className='d-flex w-100 vh-100 justify-content-center align-items-center'>
     <div className='w-50 border bg-secondary text-white p-5'>
