@@ -28,7 +28,8 @@ function Home() {
 <td> {user.name}</td>
 <td> {user.email}</td>
 <td>
-  <Link className='btn btn-sm btn-primary'> Edit</Link>
+<Link to={`/edit/${user.id}`} className='btn btn-sm btn-primary'>Edit</Link>
+
   <button className='btn btn-sm btn-primary danger ms-2'> Delete</button>
 </td>
     </tr>
