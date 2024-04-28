@@ -10,7 +10,7 @@ function Create() {
     const users = useSelector((state)=> state.users);
     const handleSubmit= (event) =>{
         event.preventDefault();
-        dispatch(addUser({ id: , name,email
+        dispatch(addUser({ id:users[users.length-1].id +1, name,email
 
         }))
     }
