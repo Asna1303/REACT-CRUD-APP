@@ -5,6 +5,8 @@ import { useParams } from 'react-router-dom';
 const Update = () => {
     const{id} =useParams();
     const users = useSelector((state)=> state.users);
+    const existingUser=users.filter(f=>f.id===id);
+    
   return (
     <div className='d-flex w-100 vh-100 justify-content-center align-items-center'>
     <div className='w-50 border bg-secondary text-white p-5'>
