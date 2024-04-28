@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { addUser } from './UserReducer';
 import { useDispatch,useSelector } from 'react-redux';
+import {useNavigate} from 'react-router-dom';
+
 
 
 function Create() {
@@ -8,6 +10,7 @@ function Create() {
     const [email,setEmail] = useState('')
     const dispatch=useDispatch();
     const users = useSelector((state)=> state.users);
+    const navigate=useNavigate();
     const handleSubmit= (event) =>{
         event.preventDefault();
         dispatch(addUser({ id:users[users.length-1].id +1, name,email
