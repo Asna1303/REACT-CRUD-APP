@@ -17,11 +17,11 @@ const Update = () => {
       <form>
         <div>
           <label htmlFor="name">Name: </label>
-         < input type="text" name='name' className='form-control' placeholder='enter name' value={uname} onChange={e=>setName()}/>
+         < input type="text" name='name' className='form-control' placeholder='enter name' value={uname} onChange={e=>setName(e.target.value)}/>
         </div>
         <div>
           <label htmlFor="email">Email:</label>
-          <input type="email" name='email' className="form-control" placeholder='enter email id' value={uemail}/>
+          <input type="email" name='email' className="form-control" placeholder='enter email id' value={uemail} onChange={e=>setEmail(e.target.value)}/>
         </div><br />
         <button className='btn btn-info'>Update</button>
       </form>
