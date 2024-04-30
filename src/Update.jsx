@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { useSelector } from 'react-redux';
+import { useDispatch,useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import {updateUser} from './UserReducer'
 
 const Update = () => {
     const{id} =useParams();
