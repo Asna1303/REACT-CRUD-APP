@@ -9,12 +9,12 @@ const userSlice = createSlice({
            state.push(action.payload);
         },
         updateUser:(state,action)=>{
-            
+
         }
 
 
     }
 
 })
-export const {addUser} = userSlice.actions;
+export const {addUser,udateUser} = userSlice.actions;
 export default userSlice.reducer;
